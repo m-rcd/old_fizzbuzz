@@ -1,12 +1,11 @@
-def is_divisible_by_three?(number)
-  number % 3 == 0
+
+def is_divisible_by?(number, divisor)
+  number % divisor == 0
 end
 
-def is_divisible_by_five?(number)
-  number % 5 == 0
-end
-
-def is_divisible_by_three_and_five(number)
-  number % 3 == 0
-  number % 5 == 0
+def fizzbuzz_says(number)
+  return "fizzbuzz" if is_divisible_by?(number, 15)
+  return "fizz" if is_divisible_by?(number, 3)
+  return "buzz" if is_divisible_by?(number, 5)
+  number 
 end
